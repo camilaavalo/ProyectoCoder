@@ -1,0 +1,256 @@
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+html{font-size: 62.5%;}
+
+/* general */
+
+#fondo{background-color: rgb(0, 0, 0);}
+
+body {font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    ;
+}
+
+.container-fluid{background-color:#29243a;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-toggler{background-color: orange;
+}
+
+.nav-link{color: white;
+}
+
+.logo{ width: 200px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a {font-size: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* index */
+
+.titulo{ padding: 40px;
+}
+
+.titulo h1{font-weight: 900;
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+.titulo h2{ font-weight: 700;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+.titulo h3{font-weight: 600;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+.titulo h4{font-size: 15px;
+            font-weight: 400;
+            padding-top: 20px;
+}
+
+.titulo h5 {font-size: 15px;
+        font-weight: 400;
+        padding-top: 20px
+    }
+
+.titulo p{ padding-bottom: 30px; 
+        font-size: 15px;
+        
+    }
+
+.imagenTexto{ display: grid;
+grid-template-columns: 50%;
+grid-template-areas: 
+"texto1 imagen"
+"texto2 imagen"
+"texto3 imagen"
+"texto4 imagen";}
+
+.texto1{grid-area: texto1;}
+.texto2{grid-area: texto2;}
+.texto3{grid-area: texto3;}
+.texto4{grid-area: texto4;}
+
+.foto1{grid-area: imagen;
+    width: 600px;
+    padding-left: 30px;
+}
+
+/* historia */
+
+.textoNacimiento{display: grid;
+grid-template-columns: 70%;}
+
+.carousel-inner{padding-bottom: 20px;
+    padding-left: 40px;}
+
+/* tour */
+
+.fotoFechas{width: 1000px;
+display: flex ;
+justify-content: center;
+margin-left: 90px;
+margin-bottom: 40px;
+}
+
+.fechaImportante{background-color: #5d5088;
+background-repeat: repeat;
+padding: 0;
+display: grid;
+}
+
+
+.fechaImportante h2{ text-align: center;
+font-size: 36px;
+
+}
+
+.fechaImportante h3{text-align: center;
+    font-size: 20px;
+}
+
+.fechaImportante input { width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botonImportante{
+justify-self: center;
+}
+
+.tour{display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "lugar dia boton"
+                }
+                
+.lugar{grid-area: lugar;
+        justify-self: start;}
+.dia{grid-area: dia;
+    justify-self: center;
+}
+.btn{grid-area: boton;
+    background-color: orange;
+    color: white;
+    justify-self: end;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* discografia */
+
+.spotify { margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas: 
+    "spotify1 spotify2 spotify3" 
+    "spotify4 spotify5 spotify6";
+}
+
+    .spotify1{ grid-area: spotify1; margin: 30px;}
+    .spotify2{ grid-area: spotify2; margin: 30px;}
+    .spotify3{ grid-area: spotify3; margin: 30px;}
+    .spotify4{ grid-area: spotify4; margin: 30px;}
+    .spotify5{ grid-area: spotify5; margin: 30px;}
+    .spotify6{ grid-area: spotify6; margin: 30px;}
+
+/* contacto */
+label{padding-top: 10px;
+    font-size: 12px;
+}
+
+/* footer */
+.pieDePagina{ background-color:rgb(41, 36, 58);
+        padding: 40px;
+        display: flex;
+    align-items: baseline;
+    justify-content: space-around;}
+    
+        
+.pieDePagina a {font-weight: 500;
+            margin-top: 20px;}
+
+.pieDePagina h2 {font-weight: 700;
+font-size: 20px;
+padding-bottom: 20px;}
+
+
+/* index responsive */
+
+
+@media screen and (max-width: 480px) {
+    .imagenTexto{ display: block ;
+}}
+
+
+@media screen and (max-width: 480px) {
+    .foto1{ 
+    padding: 0px;
+    width: 400px;
+    justify-content: center;
+    margin-bottom: 30px;
+    }
+} 
+@media screen and (max-width: 480px) {
+    .video{ width: 400px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .titulo{ padding: 20px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .titulo h1{ font-size: 25px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .titulo h2{ font-size: 20px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .titulo p{ padding-bottom: 30px; 
+    font-size: 12px;
+    
+}}
+
+/* historia responsive */
+
+
+@media screen and (max-width: 768px) {
+    .textoNacimiento{display: grid;
+        grid-template-columns: 100%;}
+
+/* discografia responsive */
+
+@media screen and (max-width: 480px) {.spotify {
+            margin-left: 10px;
+            display: block}}
+
+/* tour responsive */
+@media screen and (max-width: 768px) {   
+    .fotoFechas{ width: 700px;
+    margin-left: 0px;} }
+
+    /* footer responsive */
+@media screen and (max-width: 480px) {
+    .pieDePagina {display: block;
+    padding-bottom: 10px;}
+}}
